@@ -1,6 +1,8 @@
 import type { MetaFunction,LinksFunction } from '@remix-run/node';
+import Navbar from '~/components/navbar/Navbar';
 import globalStyles from '~/styles/global.css';
 import homeStyles from '~/styles/home.css';
+import navbarStyles from '~/styles/navbar.css';
 export const meta: MetaFunction = () => {
   return [
     { title: 'Bizops-pro' },
@@ -15,6 +17,8 @@ export const links:LinksFunction = ()=>{
     },{
 
       rel:'stylesheet',href:homeStyles
+    },{
+      rel:'stylesheet',href:navbarStyles
     }
   ];
 };
@@ -23,8 +27,7 @@ export const links:LinksFunction = ()=>{
 export default function Index() {
   return (
     <div>
-      <h1>Homepage</h1>
-      <h2>From home styles</h2>
+      <Navbar />
     </div>
   );
 }
