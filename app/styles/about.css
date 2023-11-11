@@ -1,3 +1,31 @@
-h3{
-    color: blue;
+.section1 {
+  padding: 136px 84px 83px 83px;
+}
+
+.sec2-inner {
+  background: #f8f8ff;
+  padding: 50px 163px 48px 147px;
+}
+
+.sec2-heading {
+  margin-bottom: 19px;
+}
+
+.para {
+  color: #666;
+  text-align: center;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;
+}
+
+.sec2-para1 {
+  max-width: 1130px;
+  margin-bottom: 22px;
+}
+.sec2-para2 {
+  max-width: 1052px;
+  margin-bottom: 22px;
 }
