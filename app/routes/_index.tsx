@@ -1,5 +1,5 @@
-import type { MetaFunction } from '@remix-run/node';
-
+import type { MetaFunction,LinksFunction } from '@remix-run/node';
+import globalStyles from '~/styles/global.css';
 export const meta: MetaFunction = () => {
   return [
     { title: 'Bizops-pro' },
@@ -7,9 +7,19 @@ export const meta: MetaFunction = () => {
   ];
 };
 
+export const links:LinksFunction = ()=>{
+  return[
+    {
+      rel:'stylesheet',href:globalStyles
+    }
+  ];
+};
+
+
 export default function Index() {
   return (
     <div>
+      <h1>Homepage</h1>
     </div>
   );
 }
