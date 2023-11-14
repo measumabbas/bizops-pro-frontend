@@ -17,15 +17,9 @@ import TestimonialImg2 from '~/images/testimg2.png';
 import PngLogo from '~/images/pngLogo.png';
 import TrailImg from '~/images/trailImg.png';
 import { LinksFunction } from '@remix-run/node';
-import homeStyles from '~/styles/home.css';
 
-export const links:LinksFunction = ()=>{
-  return[{
 
-    rel:'stylesheet',href:homeStyles
-  }
-  ];
-};
+
 
 const Home = () => {
   return (
