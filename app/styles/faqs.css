@@ -1,0 +1,196 @@
+.faqs-inner {
+  padding: 143px 80px 60px 80px;
+  background: #fafafa;
+}
+
+.faqs-heading {
+  max-width: 908px;
+  margin: 0 auto;
+}
+
+.select-lang {
+  /* float: right; */
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 11px;
+}
+
+.select-lang span {
+  color: var(--Grey-3, #656263);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+select {
+  padding: 10px;
+  width: 93.05px;
+  border-radius: 8px;
+  padding-right: 10px;
+  border: 1px solid var(--blue-off-1, rgba(84, 89, 255, 0.1));
+  background: var(--White, #fff);
+  outline: none;
+  color: var(--Dark, #25233c);
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  position: relative;
+}
+
+select option {
+  background: var(--White, #fff);
+  /* color: #333; */
+}
+select:focus {
+  outline: none;
+  border: 1px solid rgba(84, 89, 255, 0.1);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+ol {
+  list-style: none; 
+}
+
+li.user-reg, li.usage, li.fee-payment, li.data-privacy, li.intellectual-property {
+  counter-increment: section; 
+  color: #666;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px;
+margin-bottom: 10px; 
+}
+
+li.user-reg:before {
+  content: "2." counter(section); 
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; 
+padding-right: 10px;
+}
+li.usage:before {
+  content: "3." counter(section); 
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+padding-right: 10px; 
+}
+li.fee-payment:before {
+  content: "4." counter(section);
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+padding-right: 10px;
+}
+li.data-privacy:before {
+  content: "5." counter(section); 
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px;
+padding-right: 10px;
+}
+li.intellectual-property:before {
+  content: "6." counter(section); 
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; 
+padding-right: 10px;
+}
+
+ol.plateform-usage li{
+  list-style: lower-alpha;
+  list-style-type: lower-alpha;
+  margin-left: 17px;
+}
+
+ol.plateform-usage li::marker{
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; /* 137.5% */
+}
+
+.terms-conditions{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.terms-conditions-paras{
+  margin-top: 63px;
+  color: #666;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
+}
+.conditions-paras{
+  color: #666;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: 22px; 
+}
+
+.head-para{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 5px;
+}
+
+.mini-heading{
+  color: #000;
+font-family: Roboto;
+font-size: 16px;
+font-style: normal;
+font-weight: 500;
+line-height: 22px; 
+}
+
+.plateform-usage{
+  /* color: #000;
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px; 
+  padding-right: 10px; */
+  
+}
