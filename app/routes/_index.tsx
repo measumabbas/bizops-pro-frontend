@@ -1,18 +1,8 @@
-import type { MetaFunction } from '@remix-run/node';
+import type { LoaderFunction } from '@remix-run/node';
+import { redirect } from '@remix-run/node';
 
-export const meta: MetaFunction = () => {
-  return [
-    { title: 'Bizops-pro' },
-    { name: 'description', content: 'Welcome to Bizops-pro!' },
-  ];
+export const loader:LoaderFunction = ()=>{
+  return redirect('/landingpage/home');
 };
 
 
-
-
-export default function Index() {
-  return (
-    <div>
-    </div>
-  );
-}

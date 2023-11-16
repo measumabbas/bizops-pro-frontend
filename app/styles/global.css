@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100&display=swap");
 
 * {
   padding: 0;
@@ -16,14 +16,6 @@
   font-weight: 400;
   line-height: 127.188%; /* 22.894px */
 }
-#active {
-  color: #3e0ffe;
-  font-family: Roboto;
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: normal;
-}
 
 .headings {
   color: #25233c;
@@ -36,6 +28,20 @@
 }
 
 .max-width-1440 {
-    max-width: 1440px;
-    margin: 0 auto;
-  }
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.mb-10 {
+  margin-bottom: 10px;
+}
+
+.mb-20 {
+  margin-bottom: 20px;
+}
+.mb-30 {
+  margin-bottom: 30px;
+}
+.mb-40 {
+  margin-bottom: 40px;
+}

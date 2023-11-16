@@ -5,6 +5,7 @@ import Navbar from '~/components/navbar/Navbar';
 import homeStyles from '~/styles/home.css';
 import navbarStyles from '~/styles/navbar.css';
 
+
 export const links:LinksFunction = ()=>{
   return[
     {
@@ -15,6 +16,9 @@ export const links:LinksFunction = ()=>{
     }
   ];
 };
+
+
+
 const LandingPage = () => {
   return (
     <div>
