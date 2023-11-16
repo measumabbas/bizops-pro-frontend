@@ -1,10 +1,3 @@
-import type { LoaderFunction } from '@remix-run/node';
-import { redirect } from '@remix-run/node';
-
-export const loader:LoaderFunction = ()=>{
-  return redirect('/landingpage/home');
-};
-
 
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import ComingSoon from './landingpage.comingsoon/route';
