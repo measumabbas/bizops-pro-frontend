@@ -1,7 +1,8 @@
 import { LinksFunction } from '@remix-run/node';
 import navbarStyles from '~/styles/navbar.css';
 import Logo from '../navbar/images/logo.png';
-
+import { Link } from '@remix-run/react';
+import { NavLink } from '@remix-run/react';
 export const links: LinksFunction = () => [
   {
     rel: 'stylesheet',
@@ -17,11 +18,21 @@ export default function Navbar() {
             <a href="#"><img src={Logo} alt="" /></a>
           </div>
           <ul className="nav-links">
-            <a id="active" href="#"><li>Home</li></a>
-            <a href="#"><li>Features</li></a>
-            <a href="#"><li>Pricing</li></a>
-            <a href="#"><li>About</li></a>
-            <a href="#"><li>Blog</li></a>
+            <NavLink className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            } to='/landingpage/home'><li>Home</li></NavLink>
+            <NavLink className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            } to="/landingpage/features"><li>Features</li></NavLink>
+            <NavLink className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            } to="/landingpage/pricing"><li>Pricing</li></NavLink>
+            <NavLink className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            } to="/landingpage/about"><li>About</li></NavLink>
+            <NavLink className={({ isActive, isPending }) =>
+              isPending ? 'pending' : isActive ? 'active' : ''
+            } to="/landingpage/blog"><li>Blog</li></NavLink>
           </ul>
           <div className="contact-login-btn">
             <button className="contact">Contact Us</button>

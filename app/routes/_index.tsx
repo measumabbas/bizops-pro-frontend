@@ -1,3 +1,4 @@
+
 import type { LinksFunction, MetaFunction } from '@remix-run/node';
 import ComingSoon from './landingpage.comingsoon/route';
 import comingSoonStyles from '~/styles/comingsoon.css';

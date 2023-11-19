@@ -27,6 +27,15 @@
     line-height: normal;
   
   }
+
+  .navbar a.active {
+    color: #3e0ffe;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
   
   .navbar a li{
     list-style: none;
